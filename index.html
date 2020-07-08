@@ -1,12 +1,25 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
+<html ng-app='DIApp'>
+ <head>
     <meta charset="utf-8">
-    <title>hello coursera</title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+
+    <title>Expressions and interpolations</title>
   </head>
   <body>
     <h1>
-    hello coursera</h1>
-  </body>
+  Expression and interpolations!!
+</h1>
+<div ng-controller='MsgController'>
+Message is : <br>
+{{name}} has a message for you sir!!
+<!-- {{printMsg();}} -->
+</div>
+<div ng-controller='MsgController'>
+  <button ng-click="feedShubham()">Feed Shubham</button>
+  <br>
+  {{stateOfBeing}} has a message for you
+  <img ng-src="images\shubham_{{stateOfBeing}}.jpg">
+</div></body>
 </html>
